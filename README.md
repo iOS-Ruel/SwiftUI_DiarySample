@@ -1,7 +1,6 @@
 # SwiftUI_Diary Sampe (with: FastCampus)
 
 
-
 ## 새로익힌것
 - Property Wrappers
 @State, @Binding, @Published, @ObservedObject, @StateObject, @Environment, @EnvironmentObject, ObservableObject
