@@ -36,8 +36,12 @@ struct DiaryListView: View {
                                 let orderedItems = items.sorted(by: {$0.date<$1.date})
                                 
                                 ForEach(orderedItems) { item in
-                                    MoodDiaryCell(diary: item)
-                                        .frame(height: 50)
+                                    NavigationLink {
+                                        DiaryDetailsView(diary: item)
+                                    } label: {
+                                        MoodDiaryCell(diary: item)
+                                            .frame(height: 50)
+                                    }
                                 }
                                 
                             } header: {
@@ -51,7 +55,7 @@ struct DiaryListView: View {
                                 
                             }
                             .frame(height: 60)
-                            .padding()           
+                            .padding()
                         }
                     }
                 }
