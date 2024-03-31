@@ -49,7 +49,6 @@ struct DiaryListView: View {
                                 
                             } header: {
                                 HStack {
-                                    Spacer().frame(width: 16)
                                     Text(formattedSectionTitle(key))
                                         .font(.system(size: 30, weight: .black))
                                     Spacer()
