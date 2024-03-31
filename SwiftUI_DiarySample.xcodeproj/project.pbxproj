@@ -21,6 +21,7 @@
 		414F4BF92BB9193B00551975 /* DiaryTextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F4BEF2BB9193B00551975 /* DiaryTextInputView.swift */; };
 		4197C3582BB919990020B651 /* MoodDiaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197C3572BB919990020B651 /* MoodDiaryCell.swift */; };
 		4197C35A2BB91A610020B651 /* DiaryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197C3592BB91A610020B651 /* DiaryListViewModel.swift */; };
+		4197C35C2BB94CD60020B651 /* DiaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197C35B2BB94CD60020B651 /* DiaryViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		414F4BEF2BB9193B00551975 /* DiaryTextInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryTextInputView.swift; sourceTree = "<group>"; };
 		4197C3572BB919990020B651 /* MoodDiaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDiaryCell.swift; sourceTree = "<group>"; };
 		4197C3592BB91A610020B651 /* DiaryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryListViewModel.swift; sourceTree = "<group>"; };
+		4197C35B2BB94CD60020B651 /* DiaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 		414F4BF02BB9193B00551975 /* DiaryCreation */ = {
 			isa = PBXGroup;
 			children = (
+				4197C35B2BB94CD60020B651 /* DiaryViewModel.swift */,
 				414F4BED2BB9193B00551975 /* DiaryDateInputView.swift */,
 				414F4BEE2BB9193B00551975 /* DiaryMoodInputView.swift */,
 				414F4BEF2BB9193B00551975 /* DiaryTextInputView.swift */,
@@ -217,6 +220,7 @@
 				414F4BF62BB9193B00551975 /* Storage.swift in Sources */,
 				414F4BF82BB9193B00551975 /* DiaryMoodInputView.swift in Sources */,
 				414F4BD62BB9192400551975 /* SwiftUI_DiarySampleApp.swift in Sources */,
+				4197C35C2BB94CD60020B651 /* DiaryViewModel.swift in Sources */,
 				414F4BF52BB9193B00551975 /* MoodDiaryStorage.swift in Sources */,
 				414F4BF72BB9193B00551975 /* DiaryDateInputView.swift in Sources */,
 			);

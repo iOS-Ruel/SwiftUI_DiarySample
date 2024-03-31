@@ -11,6 +11,8 @@ struct DiaryListView: View {
     //월별로 섹션을 나눔
     
     @StateObject var vm: DiaryListViewModel
+    //presenting
+    @State var isPresenting: Bool = false
     
     let layout:[GridItem] = [
         GridItem(.flexible()),
@@ -46,7 +48,6 @@ struct DiaryListView: View {
                                 
                             } header: {
                                 HStack {
-                                    
                                     Spacer().frame(width: 16)
                                     Text(formattedSectionTitle(key))
                                         .font(.system(size: 30, weight: .black))
@@ -63,6 +64,7 @@ struct DiaryListView: View {
                 HStack {
                     Button {
                         print("new button tapped")
+                        isPresenting = true
                     } label: {
                         Image(systemName: "plus")
                             .resizable()
@@ -77,6 +79,11 @@ struct DiaryListView: View {
             }
             .navigationTitle("Emotion Diary")
         }
+        .sheet(isPresented: $isPresenting) {
+            let vm = DiaryViewModel(isPresented: $isPresenting)
+            DiaryDateInputView(vm: vm)
+        }
+        
     }
 }
 
