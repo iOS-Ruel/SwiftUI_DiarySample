@@ -11,6 +11,15 @@
 		414F4BD82BB9192400551975 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F4BD72BB9192400551975 /* ContentView.swift */; };
 		414F4BDA2BB9192500551975 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 414F4BD92BB9192500551975 /* Assets.xcassets */; };
 		414F4BDD2BB9192500551975 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 414F4BDC2BB9192500551975 /* Preview Assets.xcassets */; };
+		414F4BF12BB9193B00551975 /* DiaryDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F4BE32BB9193B00551975 /* DiaryDetailsView.swift */; };
+		414F4BF22BB9193B00551975 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F4BE52BB9193B00551975 /* Mood.swift */; };
+		414F4BF32BB9193B00551975 /* MoodDiary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F4BE62BB9193B00551975 /* MoodDiary.swift */; };
+		414F4BF42BB9193B00551975 /* DiaryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F4BE82BB9193B00551975 /* DiaryListView.swift */; };
+		414F4BF52BB9193B00551975 /* MoodDiaryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F4BEA2BB9193B00551975 /* MoodDiaryStorage.swift */; };
+		414F4BF62BB9193B00551975 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F4BEB2BB9193B00551975 /* Storage.swift */; };
+		414F4BF72BB9193B00551975 /* DiaryDateInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F4BED2BB9193B00551975 /* DiaryDateInputView.swift */; };
+		414F4BF82BB9193B00551975 /* DiaryMoodInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F4BEE2BB9193B00551975 /* DiaryMoodInputView.swift */; };
+		414F4BF92BB9193B00551975 /* DiaryTextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F4BEF2BB9193B00551975 /* DiaryTextInputView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,15 @@
 		414F4BD72BB9192400551975 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		414F4BD92BB9192500551975 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		414F4BDC2BB9192500551975 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		414F4BE32BB9193B00551975 /* DiaryDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryDetailsView.swift; sourceTree = "<group>"; };
+		414F4BE52BB9193B00551975 /* Mood.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
+		414F4BE62BB9193B00551975 /* MoodDiary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodDiary.swift; sourceTree = "<group>"; };
+		414F4BE82BB9193B00551975 /* DiaryListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryListView.swift; sourceTree = "<group>"; };
+		414F4BEA2BB9193B00551975 /* MoodDiaryStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodDiaryStorage.swift; sourceTree = "<group>"; };
+		414F4BEB2BB9193B00551975 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		414F4BED2BB9193B00551975 /* DiaryDateInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryDateInputView.swift; sourceTree = "<group>"; };
+		414F4BEE2BB9193B00551975 /* DiaryMoodInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryMoodInputView.swift; sourceTree = "<group>"; };
+		414F4BEF2BB9193B00551975 /* DiaryTextInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryTextInputView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +69,11 @@
 		414F4BD42BB9192400551975 /* SwiftUI_DiarySample */ = {
 			isa = PBXGroup;
 			children = (
+				414F4BF02BB9193B00551975 /* DiaryCreation */,
+				414F4BE42BB9193B00551975 /* DiaryDetails */,
+				414F4BE92BB9193B00551975 /* DiaryList */,
+				414F4BE72BB9193B00551975 /* Model */,
+				414F4BEC2BB9193B00551975 /* Storage */,
 				414F4BD52BB9192400551975 /* SwiftUI_DiarySampleApp.swift */,
 				414F4BD72BB9192400551975 /* ContentView.swift */,
 				414F4BD92BB9192500551975 /* Assets.xcassets */,
@@ -65,6 +88,50 @@
 				414F4BDC2BB9192500551975 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		414F4BE42BB9193B00551975 /* DiaryDetails */ = {
+			isa = PBXGroup;
+			children = (
+				414F4BE32BB9193B00551975 /* DiaryDetailsView.swift */,
+			);
+			path = DiaryDetails;
+			sourceTree = "<group>";
+		};
+		414F4BE72BB9193B00551975 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				414F4BE52BB9193B00551975 /* Mood.swift */,
+				414F4BE62BB9193B00551975 /* MoodDiary.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		414F4BE92BB9193B00551975 /* DiaryList */ = {
+			isa = PBXGroup;
+			children = (
+				414F4BE82BB9193B00551975 /* DiaryListView.swift */,
+			);
+			path = DiaryList;
+			sourceTree = "<group>";
+		};
+		414F4BEC2BB9193B00551975 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				414F4BEA2BB9193B00551975 /* MoodDiaryStorage.swift */,
+				414F4BEB2BB9193B00551975 /* Storage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		414F4BF02BB9193B00551975 /* DiaryCreation */ = {
+			isa = PBXGroup;
+			children = (
+				414F4BED2BB9193B00551975 /* DiaryDateInputView.swift */,
+				414F4BEE2BB9193B00551975 /* DiaryMoodInputView.swift */,
+				414F4BEF2BB9193B00551975 /* DiaryTextInputView.swift */,
+			);
+			path = DiaryCreation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +204,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				414F4BF92BB9193B00551975 /* DiaryTextInputView.swift in Sources */,
+				414F4BF22BB9193B00551975 /* Mood.swift in Sources */,
+				414F4BF12BB9193B00551975 /* DiaryDetailsView.swift in Sources */,
+				414F4BF32BB9193B00551975 /* MoodDiary.swift in Sources */,
 				414F4BD82BB9192400551975 /* ContentView.swift in Sources */,
+				414F4BF42BB9193B00551975 /* DiaryListView.swift in Sources */,
+				414F4BF62BB9193B00551975 /* Storage.swift in Sources */,
+				414F4BF82BB9193B00551975 /* DiaryMoodInputView.swift in Sources */,
 				414F4BD62BB9192400551975 /* SwiftUI_DiarySampleApp.swift in Sources */,
+				414F4BF52BB9193B00551975 /* MoodDiaryStorage.swift in Sources */,
+				414F4BF72BB9193B00551975 /* DiaryDateInputView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
