@@ -113,9 +113,9 @@
 		414F4BE92BB9193B00551975 /* DiaryList */ = {
 			isa = PBXGroup;
 			children = (
+				4197C3592BB91A610020B651 /* DiaryListViewModel.swift */,
 				414F4BE82BB9193B00551975 /* DiaryListView.swift */,
 				4197C3572BB919990020B651 /* MoodDiaryCell.swift */,
-				4197C3592BB91A610020B651 /* DiaryListViewModel.swift */,
 			);
 			path = DiaryList;
 			sourceTree = "<group>";
