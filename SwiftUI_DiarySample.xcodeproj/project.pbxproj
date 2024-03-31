@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		414F4BD62BB9192400551975 /* SwiftUI_DiarySampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F4BD52BB9192400551975 /* SwiftUI_DiarySampleApp.swift */; };
-		414F4BD82BB9192400551975 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F4BD72BB9192400551975 /* ContentView.swift */; };
 		414F4BDA2BB9192500551975 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 414F4BD92BB9192500551975 /* Assets.xcassets */; };
 		414F4BDD2BB9192500551975 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 414F4BDC2BB9192500551975 /* Preview Assets.xcassets */; };
 		414F4BF12BB9193B00551975 /* DiaryDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F4BE32BB9193B00551975 /* DiaryDetailsView.swift */; };
@@ -20,12 +19,13 @@
 		414F4BF72BB9193B00551975 /* DiaryDateInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F4BED2BB9193B00551975 /* DiaryDateInputView.swift */; };
 		414F4BF82BB9193B00551975 /* DiaryMoodInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F4BEE2BB9193B00551975 /* DiaryMoodInputView.swift */; };
 		414F4BF92BB9193B00551975 /* DiaryTextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F4BEF2BB9193B00551975 /* DiaryTextInputView.swift */; };
+		4197C3582BB919990020B651 /* MoodDiaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197C3572BB919990020B651 /* MoodDiaryCell.swift */; };
+		4197C35A2BB91A610020B651 /* DiaryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197C3592BB91A610020B651 /* DiaryListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		414F4BD22BB9192400551975 /* SwiftUI_DiarySample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_DiarySample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		414F4BD52BB9192400551975 /* SwiftUI_DiarySampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_DiarySampleApp.swift; sourceTree = "<group>"; };
-		414F4BD72BB9192400551975 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		414F4BD92BB9192500551975 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		414F4BDC2BB9192500551975 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		414F4BE32BB9193B00551975 /* DiaryDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryDetailsView.swift; sourceTree = "<group>"; };
@@ -37,6 +37,8 @@
 		414F4BED2BB9193B00551975 /* DiaryDateInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryDateInputView.swift; sourceTree = "<group>"; };
 		414F4BEE2BB9193B00551975 /* DiaryMoodInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryMoodInputView.swift; sourceTree = "<group>"; };
 		414F4BEF2BB9193B00551975 /* DiaryTextInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryTextInputView.swift; sourceTree = "<group>"; };
+		4197C3572BB919990020B651 /* MoodDiaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDiaryCell.swift; sourceTree = "<group>"; };
+		4197C3592BB91A610020B651 /* DiaryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +77,6 @@
 				414F4BE72BB9193B00551975 /* Model */,
 				414F4BEC2BB9193B00551975 /* Storage */,
 				414F4BD52BB9192400551975 /* SwiftUI_DiarySampleApp.swift */,
-				414F4BD72BB9192400551975 /* ContentView.swift */,
 				414F4BD92BB9192500551975 /* Assets.xcassets */,
 				414F4BDB2BB9192500551975 /* Preview Content */,
 			);
@@ -111,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				414F4BE82BB9193B00551975 /* DiaryListView.swift */,
+				4197C3572BB919990020B651 /* MoodDiaryCell.swift */,
+				4197C3592BB91A610020B651 /* DiaryListViewModel.swift */,
 			);
 			path = DiaryList;
 			sourceTree = "<group>";
@@ -206,10 +209,11 @@
 			files = (
 				414F4BF92BB9193B00551975 /* DiaryTextInputView.swift in Sources */,
 				414F4BF22BB9193B00551975 /* Mood.swift in Sources */,
+				4197C3582BB919990020B651 /* MoodDiaryCell.swift in Sources */,
 				414F4BF12BB9193B00551975 /* DiaryDetailsView.swift in Sources */,
 				414F4BF32BB9193B00551975 /* MoodDiary.swift in Sources */,
-				414F4BD82BB9192400551975 /* ContentView.swift in Sources */,
 				414F4BF42BB9193B00551975 /* DiaryListView.swift in Sources */,
+				4197C35A2BB91A610020B651 /* DiaryListViewModel.swift in Sources */,
 				414F4BF62BB9193B00551975 /* Storage.swift in Sources */,
 				414F4BF82BB9193B00551975 /* DiaryMoodInputView.swift in Sources */,
 				414F4BD62BB9192400551975 /* SwiftUI_DiarySampleApp.swift in Sources */,
