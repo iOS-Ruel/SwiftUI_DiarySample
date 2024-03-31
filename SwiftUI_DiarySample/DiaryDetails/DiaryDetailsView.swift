@@ -9,30 +9,29 @@ import SwiftUI
 
 struct DiaryDetailsView: View {
     
-    
+    @StateObject var vm: DiaryDetailsViewModel
     @Environment(\.colorScheme) var  colorScheme
     
-    var diary: MoodDiary
     
     var body: some View {
-        
         VStack {
             ScrollView {
                 VStack(spacing: 5) {
-                    Text(formattedDate(dateString: diary.date))
+                    Text(formattedDate(dateString: vm.diary.date))
                         .font(.system(size: 30, weight: .bold))
 
-                    Image(systemName: diary.mood.imageName)
+                    Image(systemName: vm.diary.mood.imageName)
                         .renderingMode(.original)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .shadow(color: .black.opacity(0.2), radius: 10, x: 0, y: 0)
                         .frame(height: 80)
                     
-                    Text(diary.text)
+                    Text(vm.diary.text)
                         .font(.system(size: 20, weight: .medium))
                         .foregroundStyle(colorScheme == .dark ? .white : .black)
                 }
+                .frame(maxWidth: .infinity)
             }
             
             Spacer()
@@ -41,6 +40,7 @@ struct DiaryDetailsView: View {
             HStack {
                 Button {
                     print("delete button tapped")
+                    vm.delete()
                 } label: {
                     Image(systemName: "trash")
                         .renderingMode(.template)
@@ -55,6 +55,7 @@ struct DiaryDetailsView: View {
 
             }
         }
+        
         
         
     }
@@ -72,5 +73,5 @@ extension DiaryDetailsView {
 }
 
 #Preview {
-    DiaryDetailsView(diary: MoodDiary.list.first!)
+    DiaryDetailsView(vm: DiaryDetailsViewModel(diaries: .constant(MoodDiary.list), diary: MoodDiary.list.first!))
 }
